@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>400 Bad Request</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        body {
+        	font-family: Verdana, Arial, Helvetica, sans-serif;
+        	font-size: 12px;
+        	background-color:#367E8E;
+        	scrollbar-base-color: #005B70;
+        	scrollbar-arrow-color: #F3960B;
+        	scrollbar-DarkShadow-Color: #000000;
+        	color: #FFFFFF;
+			margin:0;
+        }
+        a { color:#021f25; text-decoration:none}
+        h1 {
+        	font-size: 18px;
+        	color: #FB9802;
+        	padding-bottom: 10px;
+        	background-image: url(sys_cpanel/images/bottombody.jpg);
+        	background-repeat: repeat-x;
+        	padding:5px 0 10px 15px;
+			margin:0;
+        }
+        #body-content p {
+        	padding-left: 25px;
+        	padding-right: 25px;
+        	line-height: 18px;
+        	padding-top: 5px;
+        	padding-bottom: 5px;
+        }
+        h2 {
+        	font-size: 14px;
+        	font-weight: bold;
+        	color: #FF9900;
+        	padding-left: 15px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="body-content">  
+<!-- start content-->
+
+<!-- 
+ instead of REQUEST_URI, we could show absolute URL via:
+ http://HTTP_HOST/REQUEST_URI
+    but what if its https:// or other protocol?
+    
+    SERVER_PORT_SECURE doesn't seem to be used
+    SERVER_PORT logic would break if they use alternate ports
+-->
+
+<h1>400 Bad Request</h1>
+<p>Your browser sent a request that this server could not understand:</p>
+  <blockquote>
+    (none)/envato/pixelway/css/fonts/fonticon.svg#fonticon (port 80)
+  </blockquote> 
+<p>
+    Please forward this error screen to 204.197.248.110's 
+    <a href="/cdn-cgi/l/email-protection#14627d7671607c71797167547379757d783a777b792b6761767e717760295166667b663479716767757371344f202424493420242434567570344671656171676034727b66343c7a7b7a713d3b717a6275607b3b647d6c717863756d3b7767673b727b7a60673b727b7a607d777b7a3a67627337727b7a607d777b7a34647b6660342c24347b7a344061716770756d38342525395e617839262425233425232e202c2e272034">
+    WebMaster</a>.
+</p>
+<hr />
+
+
+<!-- end content -->
+    </div>
+  <script>/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/\>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
+</html>

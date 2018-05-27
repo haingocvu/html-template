@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>eTube - HTML5 Video Blog Site Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Slider CSS -->
+    <link rel="stylesheet" href="css/pgwslider.min.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+
+    <!-- pgwSlideshow CSS -->
+    <link rel="stylesheet" href="css/pgwslideshow.min.css">
+
+    <!-- Megamenu CSS -->
+    <link rel="stylesheet" href="css/megamenu.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Demo Panel Style -->
+    <link rel="stylesheet" href="css/demo-panels.css">
+</head>
+
+<body id=test>
+    <!-- Start Header -->
+    <header>
+        <div class="header-top hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-top-area">
+                            <div class="site-info left">
+                                <div class="mail-address">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <a href="mailto:nfo@themeix.com">info@themeix.com </a>
+                                    <span class="sepator">|</span>
+                                </div>
+                                <div class="server-time">
+                                    <i class="fa fa-clock-o"></i>
+                                    <span>Server time : 12.00am</span>
+                                </div>
+                            </div>
+                            <div class="user-info right">
+                                <div class="upload-opt">
+                                    <i class="fa fa-upload"></i>
+                                    <a href="#upload-options" data-toggle="modal">upload video</a>
+                                    <span class="sepator">|</span>
+                                </div>
+                                <div class="login-info">
+                                    <i class="fa fa-lock"></i>
+                                    <a href="#login-info" data-toggle="modal">login</a>
+                                </div>
+                            </div>
+                            <div id="upload-options" class="modal fade">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title">Upload Your Video</h3>
+                                            <button class="btn btn-sm btn-default close-btn" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="#" method="post" class="upload-form" enctype="multipart/form-data">
+                                                <div class="form-group">
+                                                    <label for="video_title">Video Title</label>
+                                                    <input type="text" class="form-control" id="video_title" placeholder="Video Title">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="video-desc">Video Description</label>
+                                                    <textarea name="video-desc" id="video-desc" class="form-control" placeholder="Video Description"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="upload_file" class="custom-file-upload">Select Your File
+                                                        <input type="file" name="upload_file" id="upload_file">
+                                                    </label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-primary btn-lg">Upload</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="login-info" class="modal fade">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title">Login Here..</h3>
+                                            <button data-dismiss="modal" class="btn btn-sm btn-default close-btn">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="#" method="post" class="login-form">
+                                                <div class="form-group">
+                                                    <label for="user_name">Username :</label>
+                                                    <input type="text" name="user_name" class="form-control" id="user_name" placeholder="username">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="user_password">Password :</label>
+                                                    <input type="password" name="user_password" class="form-control" id="user_password" placeholder="password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation area starts -->
+        <div class="main-menu">
+            <!-- Start Navigation -->
+            <nav class="header-section pin-style">
+                <div class="container">
+                    <div class="mod-menu">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <a href="index.html " title="logo" class="logo"><img src="images/logo.png" alt="logo"></a>
+                            </div>
+                            <div class="col-sm-9 nopadding">
+                                <div class="main-nav rightnav">
+                                    <ul class="nav navbar-nav top-nav">
+                                        <li class="visible-xs menu-icon">
+                                            <a href="#" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false"><i class="fa fa-bars"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div id="menu" class="collapse header-menu">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="#">Home</a><span class="arrow"></span>
+                                                <ul class="dm-align-2 mega-list">
+                                                    <li><a href="index.html">Home One</a></li>
+                                                    <li><a href="index-2.html">Home Two</a></li>
+                                                    <li><a href="index-3.html">Home Three</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Pages</a> <span class="arrow"></span>
+                                                <ul class="dm-align-2 mega-list">
+                                                    <li><a href="index.html">Home</a></li>
+                                                    <li><a href="index-2.html">Home 2</a></li>
+                                                    <li><a href="index-3.html">Home 3</a></li>
+                                                    <li><a href="blog.html">Blog<span class="sub-arrow dark right"><i class="fa fa-angle-right"></i></span></a><span class="arrow"></span>
+                                                        <ul>
+                                                           <li><a href="single-blog.html">Single Blog</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="videos.html">All Videos<span class="sub-arrow dark right"><i class="fa fa-angle-right"></i></span></a><span class="arrow"></span>
+                                                        <ul>
+															<li><a href="single-video.html">Single Video</a></li>
+															<li><a href="single-video-2.html">Single Video 2</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="contact.html">Contact</a></li>
+                                                    <li><a href="404.html">404</a></li>
+                                                </ul>
+                                            </li>											
+                                            <li><a href="blog.html">blog</a> </li>
+                                            <li class="mega-menu remove-border active"><a href="#">Mega Menu</a><span class="arrow"></span>
+                                                <ul>
+                                                    <li><span class="subtitle">Home Pages</span> <span class="arrow"></span>
+                                                        <ul class="mega-list">
+                                                            <li><a href="index.html"><i class="fa fa-home"></i>Home One</a></li>
+                                                            <li><a href="index-2.html"><i class="fa fa-home"></i>Home Two</a></li>
+                                                            <li><a href="index-3.html"><i class="fa fa-home"></i>Home Three</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><span class="subtitle">Blog Pages</span> <span class="arrow"></span>
+                                                        <ul class="mega-list">
+                                                            <li><a href="blog.html"><i class="fa fa-angle-right"></i>Blog Grid Style</a></li>
+                                                            <li><a href="single-blog.html"><i class="fa fa-angle-right"></i>Blog Single Page</a></li>
+                                                            <li><a href="single-video.html"><i class="fa fa-angle-right"></i>Single Video</a></li>
+                                                            
+                                                        </ul>
+                                                    </li>
+                                                    <li><span class="subtitle">Video Pages</span><span class="arrow"></span>
+                                                        <ul class="mega-list">
+                                                            <li><a href="videos.html"><i class="fa fa-angle-right"></i>All Videos</a></li>
+                                                            <li><a href="single-video.html"><i class="fa fa-angle-right"></i>Single Video V1</a></li>
+                                                            <li><a href="single-video-2.html"><i class="fa fa-angle-right"></i>Single Video V2</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><span class="subtitle">Extra Pages</span> <span class="arrow"></span>
+                                                        <ul class="mega-list">
+                                                            <li><a href="single-blog.html"><i class="fa fa-angle-right"></i>Single Blog</a></li>
+                                                            <li><a href="contact.html"><i class="fa fa-angle-right"></i>Contact</a></li>
+                                                            <li><a href="single-video.html"><i class="fa fa-angle-right"></i>Single Video</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li><a href="contact.html" title="contact">Contact</a></li>
+                                            <li><a href="single-blog.html" title="single blog">Single Blog</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- end navigation -->
+        </div>
+        <!-- Navigation area ends -->
+    </header>
+    <!-- End Header -->
+    <!-- Start Slider Area -->
+    <div class="slider-area ptb-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="slider-wrapper">
+                        <ul class="slider-2">
+                            <li>
+                               <img src="images/slider/4.jpg" alt="We Providing Dynamic And Static Web Sites">
+                            </li>
+                            <li>
+                                <img src="images/slider/5.jpg" alt="Wordpress Verson Is Available">
+                            </li>
+                            <li>
+                                <img src="images/slider/6.jpg" alt="Smart Interface With Clean Code">
+                            </li>
+                            <li>
+                                <img src="images/slider/7.jpg" alt="Themeix Is The Best IT farm In The World">
+                            </li>
+                            <li>
+                                <img src="images/slider/8.jpg" alt="Themeix Is The Best IT farm In The World">
+                            </li>
+                            <li>
+                                <img src="images/slider/9.jpg" alt="Themeix Is The Best IT farm In The World">
+                            </li>
+                            <li>
+                                <img src="images/slider/10.jpg" alt="Themeix Is The Best IT farm In The World">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Slider Area --> 
+    <!-- Start Video Carousel -->
+    <div class="video-carousel-area themeix-ptb bg-semi-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="themeix-section-h">
+                        <span class="heading-icon"><i class="fa fa-bolt"></i></span>
+                        <h3>Trending Videos</h3>
+                    </div>
+                    <div class="video-carousel">
+                        <div class="single-video">
+                            <div class="video-img">
+                                <a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/1.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/1.jpg" alt="video" />
+								</noscript>
+								</a>
+                                <span class="video-duration">8.17</span>
+                            </div>
+                            <div class="video-content">
+                                <h4><a href="single-video.html" class="video-title">Greek-Style Pasta Bake (Pasticcio) - English Video</a></h4>
+                                <div class="video-counter">
+                                    <div class="video-viewers">
+                                        <span class="fa fa-eye view-icon"></span>
+                                        <span>881,021</span>
+                                    </div>
+                                    <div class="video-feedback">
+                                        <div class="video-like-counter">
+                                            <span class="fa fa-thumbs-o-up like-icon"></span>
+                                            <span>120</span>
+                                        </div>
+                                        <div class="video-like-counter">
+                                            <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                            <span>2140</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-video">
+                            <div class="video-img">
+                                <a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/2.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/2.jpg" alt="video" />
+								</noscript>
+								</a>
+                                <span class="video-duration">3.11</span>
+                            </div>
+                            <div class="video-content">
+                                <h4><a href="single-video.html" class="video-title">Double Chocolate-Stuffed Mini Churros </a></h4>
+                                <div class="video-counter">
+                                    <div class="video-viewers">
+                                        <span class="fa fa-eye view-icon"></span>
+                                        <span>241,021</span>
+                                    </div>
+                                    <div class="video-feedback">
+                                        <div class="video-like-counter">
+                                            <span class="fa fa-thumbs-o-up like-icon"></span>
+                                            <span>996</span>
+                                        </div>
+                                        <div class="video-like-counter">
+                                           <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                            <span>2140</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-video">
+                            <div class="video-img">
+                                <a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/3.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/3.jpg" alt="video" />
+								</noscript>
+								</a>
+                                <span class="video-duration">5.10</span>
+                            </div>
+                            <div class="video-content">
+                                <h4><a href="single-video.html" class="video-title">Greek-Style Pasta Bake (Pasticcio - English Recipe)</a></h4>
+                                <div class="video-counter">
+                                    <div class="video-viewers">
+                                        <span class="fa fa-eye view-icon"></span>
+                                        <span>241,021</span>
+                                    </div>
+                                    <div class="video-feedback">
+                                        <div class="video-like-counter">
+                                            <span class="fa fa-thumbs-o-up like-icon"></span>
+                                            <span>785</span>
+                                        </div>
+                                        <div class="video-like-counter">
+                                            <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                            <span>2140</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-video">
+                            <div class="video-img">
+                                <a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/4.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/4.jpg" alt="video" />
+								</noscript>
+								</a>
+                                <span class="video-duration">2.29</span>
+                            </div>
+                            <div class="video-content">
+                                <h4><a href="single-video.html" class="video-title">Rainbow Sprinkle Cinnamon Rolls (Gougeres Video)</a></h4>
+                                <div class="video-counter">
+                                    <div class="video-viewers">
+                                        <span class="fa fa-eye view-icon"></span>
+                                        <span>991,021</span>
+                                    </div>
+                                    <div class="video-feedback">
+                                        <div class="video-like-counter">
+                                            <span class="fa fa-thumbs-o-up like-icon"></span>
+                                            <span>7456</span>
+                                        </div>
+                                        <div class="video-like-counter">
+                                            <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                            <span>2140</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-video">
+                            <div class="video-img">
+                                <a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/5.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/5.jpg" alt="video" />
+								</noscript>
+								</a>
+                                <span class="video-duration">5.28</span>
+                            </div>
+                            <div class="video-content">
+                                <h4><a href="single-video.html" class="video-title">Buffalo Chicken Potato Skins  (Gougeres English Video)</a></h4>
+                                <div class="video-counter">
+                                    <div class="video-viewers">
+                                        <span class="fa fa-eye view-icon"></span>
+                                        <span>241,021</span>
+                                    </div>
+                                    <div class="video-feedback">
+                                        <div class="video-like-counter">
+                                            <span class="fa fa-thumbs-o-up like-icon"></span>
+                                            <span>2140</span>
+                                        </div>
+                                        <div class="video-like-counter">
+                                           <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                            <span>2140</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Video Carousel -->  
+    <!-- Start Wide Video Section -->
+    <div class="wide-video-section themeix-ptb">
+        <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                 <div class="themeix-section-h">
+                      <span class="heading-icon"><i class="fa fa-book"></i></span>
+                       <h3>Appetizers Recipe</h3> 
+                       <a href="#" class="see-all-link">See all videos</a>
+                  </div>
+               </div>   
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3 themeix-half">
+                    <div class="single-video">
+                        <div class="video-img">
+                                <a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/6.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/6.jpg" alt="video" />
+								</noscript>
+								</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="video-content">
+                            <h4><a href="single-video.html" class="video-title">Buffalo Chicken Potato Skins</a></h4>
+                            <div class="video-counter">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                </div>
+                                <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 themeix-half">
+                    <div class="single-video">
+                        <div class="video-img">
+                                <a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/7.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/7.jpg" alt="video" />
+								</noscript>
+								</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="video-content">
+                            <h4><a href="single-video.html" class="video-title">Cheesy Stuffed Plantain Tots</a></h4>
+                            <div class="video-counter">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                </div>
+                                <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 themeix-half">
+                    <div class="single-video">
+                        <div class="video-img">
+                                <a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/8.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/8.jpg" alt="video" />
+								</noscript>
+								</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="video-content">
+                            <h4><a href="single-video.html" class="video-title">French Cheese Puffs (Gougeres)</a></h4>
+                            <div class="video-counter">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                </div>
+                                <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 themeix-half">
+                    <div class="single-video">
+                        <div class="video-img">
+							<a href="single-video.html">
+							<img class="lazy" data-src="images/thumbnails/9.jpg" alt="Video" />
+							 <noscript>
+								<img src="images/thumbnails/9.jpg" alt="video" />
+							</noscript>
+							</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="video-content">
+                            <h4><a href="single-video.html" class="video-title">Cheesy Pretzel Ring Dip</a></h4>
+                            <div class="video-counter">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                </div>
+                                <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 themeix-half">
+                    <div class="single-video">
+                        <div class="video-img">
+                                <a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/10.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/10.jpg" alt="video" />
+								</noscript>
+								</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="video-content">
+                            <h4><a href="single-video.html" class="video-title">Spicy Mango Chicken Wings</a></h4>
+                            <div class="video-counter">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                </div>
+                                <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 themeix-half">
+                    <div class="single-video">
+                        <div class="video-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/11.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/11.jpg" alt="video" />
+								</noscript>
+							</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="video-content">
+                            <h4><a href="single-video.html" class="video-title">Brick Oven-Style Pizza</a></h4>
+                            <div class="video-counter">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                </div>
+                                <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 themeix-half">
+                    <div class="single-video">
+                        <div class="video-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/12.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/12.jpg" alt="video" />
+								</noscript>
+							</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="video-content">
+                            <h4><a href="single-video.html" class="video-title">Avocado Chickpea Salad </a></h4>
+                            <div class="video-counter">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                </div>
+                                <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 themeix-half">
+                    <div class="single-video">
+                        <div class="video-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/13.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/13.jpg" alt="video" />
+								</noscript>
+							</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="video-content">
+                            <h4><a href="single-video.html" class="video-title">Honey Lime Sriracha</a></h4>
+                            <div class="video-counter">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                </div>
+                                <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Wide Video Section -->
+    <!-- Start Review And Contribute Section -->
+    <div class="review-and-contribute themeix-ptb bg-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <div class="review-area">
+                     <div class="themeix-section-h">
+                       <span class="heading-icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
+                         <h3>Desserts & Reviews</h3> 
+                     </div>
+                     <div class="single-review">
+                        <div class="review-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/14.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/14.jpg" alt="video" />
+								</noscript>
+							</a>
+                            <span class="video-duration">1.36</span>
+                        </div>
+                        <div class="review-content">
+                           <h4><a href="single-video.html" class="video-title">"Worms And Dirt" Poke Cake</a></h4>
+                            <div class="video-counter-plan">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>341,021</span>
+                                 </div>   
+                                 <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="reviwe-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+                            </div> 
+                            <div class="review-btn">
+                                <a href="#" class="view-btn">View Details</a>
+                                <a href="#" class="watch-btn">Watch Now</a>
+                            </div>                          
+                        </div>
+                     </div> 
+                     <div class="single-review">
+                        <div class="review-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/15.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/15.jpg" alt="video" />
+								</noscript>
+							</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="review-content">
+                           <h4><a href="single-video.html" class="video-title">Cheesecake-Filled Banana Bread</a></h4>
+                            <div class="video-counter-plan">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                 </div>   
+                                 <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="reviwe-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+                            </div> 
+                            <div class="review-btn">
+                                <a href="#" class="view-btn">View Details</a>
+                                <a href="#" class="watch-btn">Watch Now</a>
+                            </div>                          
+                        </div>
+                     </div> 
+                     <div class="single-review">
+                        <div class="review-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/16.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/16.jpg" alt="video" />
+								</noscript>
+							</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="review-content">
+                           <h4><a href="single-video.html" class="video-title">Leftover Easter Chocolate Tart</a></h4>
+                            <div class="video-counter-plan">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>224,021</span>
+                                 </div>   
+                                 <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="reviwe-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+                            </div> 
+                            <div class="review-btn">
+                                <a href="#" class="view-btn">View Details</a>
+                                <a href="#" class="watch-btn">Watch Now</a>
+                            </div>                          
+                        </div>
+                     </div> 
+                     <div class="single-review">
+                        <div class="review-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/17.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/17.jpg" alt="video" />
+								</noscript>
+							</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="review-content">
+                           <h4><a href="single-video.html" class="video-title">Blueberry Cinnamon Roll Bake</a></h4>
+                            <div class="video-counter-plan">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                 </div>   
+                                 <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="reviwe-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+                            </div> 
+                            <div class="review-btn">
+                                <a href="#" class="view-btn">View Details</a>
+                                <a href="#" class="watch-btn">Watch Now</a>
+                            </div>                          
+                        </div>
+                     </div>                     
+                    </div>
+                </div>
+                <!-- Start Popular Videos -->
+                <div class="col-sm-4 col-md-offset-1 col-md-3">
+                     <div class="themeix-section-h">
+                       <span class="heading-icon"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+                         <h3>Top 3 Videos</h3> 
+                     </div>
+                    <div class="popular-videos">
+                        <div class="single-video">
+                            <div class="video-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/17.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/17.jpg" alt="video" />
+								</noscript>
+							</a>
+                                <span class="video-duration">8.45</span>
+                            </div>
+                            <div class="video-content">
+                                <h4><a href="single-video.html" class="video-title">Chocolate-Dipped Oranges</a></h4>
+                                <div class="video-counter">
+                                    <div class="video-viewers">
+                                        <span class="fa fa-eye view-icon"></span>
+                                        <span>121,021</span>
+                                    </div>
+                                    <div class="video-feedback">
+                                        <div class="video-like-counter">
+                                            <span class="fa fa-thumbs-o-up like-icon"></span>
+                                            <span>3140</span>
+                                        </div>
+                                        <div class="video-like-counter">
+                                            <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                            <span>5140</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-video">
+                            <div class="video-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/18.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/18.jpg" alt="video" />
+								</noscript>
+							</a>
+                                <span class="video-duration">8.45</span>
+                            </div>
+                            <div class="video-content">
+                                <h4><a href="single-video.html" class="video-title">Easy Peach Cobbler</a></h4>
+                                <div class="video-counter">
+                                    <div class="video-viewers">
+                                        <span class="fa fa-eye view-icon"></span>
+                                        <span>121,021</span>
+                                    </div>
+                                    <div class="video-feedback">
+                                        <div class="video-like-counter">
+                                             <span class="fa fa-thumbs-o-up like-icon"></span>
+                                            <span>3140</span>
+                                        </div>
+                                        <div class="video-like-counter">
+                                            <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                            <span>5140</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-video">
+                            <div class="video-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/19.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/19.jpg" alt="video" />
+								</noscript>
+							</a>
+                                <span class="video-duration">25.02</span>
+                            </div>
+                            <div class="video-content">
+                                <h4><a href="single-video.html" class="video-title">Vegan Dessert Recipes</a></h4>
+                                <div class="video-counter">
+                                    <div class="video-viewers">
+                                        <span class="fa fa-eye view-icon"></span>
+                                        <span>91,021</span>
+                                    </div>
+                                    <div class="video-feedback">
+                                        <div class="video-like-counter">
+                                            <span class="fa fa-thumbs-o-up like-icon"></span>
+                                            <span>5140</span>
+                                        </div>
+                                        <div class="video-like-counter">
+                                            <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                            <span>2040</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Popular Videos -->
+            </div>
+        </div>
+    </div>
+    <!-- End Review And Contribute Section -->
+    <!-- Start Big Banner Area -->
+    <div class="big-banner-area themeix-ptb bg-semi-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="big-banner">
+                        <a href="#"><img src="images/banners/1.jpg" alt="banner"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Big Banner Area -->
+    <!-- Start Sports News Area -->
+    <div class="wide-video-section themeix-ptb-4">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                 <div class="themeix-section-h">
+                      <span class="heading-icon"><i class="fa fa-futbol-o" aria-hidden="true"></i></span>
+                       <h3>Vegetarian Videos</h3> 
+                       <a href="#" class="see-all-link" >See all videos</a>
+                    </div>
+               </div>   
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3 themeix-half">
+                    <div class="single-video">
+                        <div class="video-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/20.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/20.jpg" alt="video" />
+								</noscript>
+							</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="video-content">
+                            <h4><a href="single-video.html" class="video-title">Easy Chocolate Peanut Butter</a></h4>
+                            <div class="video-counter">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                </div>
+                                <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 themeix-half">
+                    <div class="single-video">
+                        <div class="video-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/21.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/21.jpg" alt="video" />
+								</noscript>
+							</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="video-content">
+                            <h4><a href="single-video.html" class="video-title">Lentils And Rice With Caramelized </a></h4>
+                            <div class="video-counter">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                </div>
+                                <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 themeix-half">
+                    <div class="single-video">
+                        <div class="video-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/22.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/22.jpg" alt="video" />
+								</noscript>
+							</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="video-content">
+                            <h4><a href="single-video.html" class="video-title">Eggs Benedict Brunch for 2</a></h4>
+                            <div class="video-counter">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                </div>
+                                <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 themeix-half">
+                    <div class="single-video">
+                        <div class="video-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/23.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/23.jpg" alt="video" />
+								</noscript>
+							</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="video-content">
+                            <h4><a href="single-video.html" class="video-title">30-Minute Pasta Primavera</a></h4>
+                            <div class="video-counter">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                </div>
+                                <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 themeix-half">
+                    <div class="single-video">
+                        <div class="video-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/24.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/24.jpg" alt="video" />
+								</noscript>
+							</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="video-content">
+                            <h4><a href="single-video.html" class="video-title">Cauliflower Grilled Cheese</a></h4>
+                            <div class="video-counter">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                </div>
+                                <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                         <span>2140</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 themeix-half">
+                    <div class="single-video">
+                        <div class="video-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/25.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/25.jpg" alt="video" />
+								</noscript>
+							</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="video-content">
+                            <h4><a href="single-video.html" class="video-title">Vegan Pulled Pork Sandwiches</a></h4>
+                            <div class="video-counter">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                </div>
+                                <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 themeix-half">
+                    <div class="single-video">
+                        <div class="video-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/26.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/26.jpg" alt="video" />
+								</noscript>
+							</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="video-content">
+                            <h4><a href="single-video.html" class="video-title">Zucchini “Meatballs"</a></h4>
+                            <div class="video-counter">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                </div>
+                                <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 themeix-half">
+                    <div class="single-video">
+                        <div class="video-img">
+							<a href="single-video.html">
+								<img class="lazy" data-src="images/thumbnails/27.jpg" alt="Video" />
+								 <noscript>
+									<img src="images/thumbnails/27.jpg" alt="video" />
+								</noscript>
+							</a>
+                            <span class="video-duration">5.28</span>
+                        </div>
+                        <div class="video-content">
+                            <h4><a href="single-video.html" class="video-title">Carrot & Chickpea Veggie Burger</a></h4>
+                            <div class="video-counter">
+                                <div class="video-viewers">
+                                    <span class="fa fa-eye view-icon"></span>
+                                    <span>241,021</span>
+                                </div>
+                                <div class="video-feedback">
+                                    <div class="video-like-counter">
+                                        <span class="fa fa-thumbs-o-up like-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                    <div class="video-like-counter">
+                                         <span class="fa fa-thumbs-o-down dislike-icon"></span>
+                                        <span>2140</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Sports News Area -->
+    <!-- Start Call To Action Area -->
+    <div class="call-to-action-area hover-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="action-content">
+                        <h2>Do you want to get the latest version eTube?</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="purchase-link text-right">
+                        <a href="#" class="themeix-purchase-btn-3">purchase now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Call To Action Area -->
+    <!-- Start Footer Area -->
+    <footer>
+        <div class="footer-area themeix-ptb">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-wrapper">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="single-footer">
+                                <div class="footer-heading-wrap">
+                                    <span class="heading-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></span>
+                                    <h3 class="footer-heading">About Us</h3>
+                                </div>
+                                <div class="single-footer-text">
+                                    <p>Vestibulum quis cursus mi, vitae mollis metus.Nulam eu lects gravida, bibendum enim in, vulputate erat. Vestibulum ullamcorper ornare magna</p>
+                                </div>
+                                <div class="social-links">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="fb-link"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="gp-link"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="single-footer">
+                                 <div class="footer-heading-wrap">
+                                    <span class="heading-icon"><i class="fa fa fa-link" aria-hidden="true"></i></span>
+                                    <h3 class="footer-heading">Important links</h3>
+                                 </div>
+                                <div class="footer-list">
+                                    <ul>
+                                        <li><a href="#">Submit New Video</a></li>
+                                        <li><a href="#">Popular Videos</a></li>
+                                        <li><a href="#">Trending Videos</a></li>
+                                        <li><a href="#">Most watched Videos</a></li>
+                                        <li><a href="#">Latest Videos</a></li>
+                                        <li><a href="#">Video Authors</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="single-footer">
+                                <div class="footer-heading-wrap">
+                                   <span class="heading-icon"><i class="fa fa-life-ring" aria-hidden="true"></i></span>
+                                   <h3 class="footer-heading">get support</h3>
+                                </div>
+                                <div class="footer-list">
+                                    <ul>
+                                        <li><a href="#">Our Forum</a></li>
+                                        <li><a href="#">Facebook Page</a></li>
+                                        <li><a href="#">Live Chat</a></li>
+                                        <li><a href="#">Toll Free Number</a></li>
+                                        <li><a href="#">Support Agent</a></li>
+                                        <li><a href="#">Tickets</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="single-footer">
+                                 <div class="footer-heading-wrap">
+                                   <span class="heading-icon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+                                   <h3 class="footer-heading">contact us</h3>
+                                 </div>
+                                <p>4100 S Choctaw Rd,  Choctaw, OK, 73020</p>
+                                <div class="footer-list">
+                                    <ul>
+                                        <li><a href="tel:+11231231234">T : +1 123 123 1234</a></li>
+                                        <li><a href="tel:+11231234321">F : +1 123 123 4321</a></li>
+                                        <li><a href="mailto:info@themeix.com">E : info@themeix.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom Area -->
+        <div class="footer-bottom-area pb-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="footer-bottom">
+                            <div class="footer-logo">
+                                <a href="#"><img src="images/logo.png" alt="logo"></a>
+                            </div>
+                            <div class="footer-links">
+                                <ul>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Refund Policy</a></li>
+                                    <li><a href="#">Disclaimer</a></li>
+                                </ul>
+                            </div>
+                            <div class="copyright-text">
+                                <p>All content Documenter &copy; 2017 - All rights reserved. - Proudly made with <a href="#">Themeix</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom Area -->
+        <!-- Start Scroll To Top -->
+        <div class="scroll-top">
+            <div class="scroll-icon">
+                <i class="fa fa-angle-up"></i>
+            </div>
+        </div>
+        <!-- End Scroll To Top -->        
+    </footer>
+    <!-- End Footer Area -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- pgwSlideshow JS -->
+    <script src="js/pgwslideshow.min.js"></script>
+
+    <!-- Slider JS -->
+    <script src="js/pgwslider.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- YTPlayes JS -->
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+    <!-- Mega Menu JS -->
+    <script src="js/megamenu.js"></script>    
+	
+	<!-- lazyload JS -->
+    <script src="js/jquery.lazyload.js"></script>
+
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9U5fMNGhdZOSpmM_QnZqs"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

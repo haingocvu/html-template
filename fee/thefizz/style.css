@@ -1,0 +1,270 @@
+/*
+Theme Name: TheFizz
+Author: ThemeBngla
+Author URI: http://www.codextree.com
+Description: It\' s a Personal Portfolio Html Template. Which is a unique feature and user competitive feature.
+Version: 1.0
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography (With All Title)
+# Elements
+# preloader
+# Header
+# Demo Section
+# footer Section
+*/
+/*================================================
+# Typography
+==================================================*/
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 1.45em;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: 400;
+  background-color: #fff;
+  color: #606060;
+}
+
+p {
+  margin-bottom: 40px;
+  line-height: 1.75em;
+}
+
+small {
+  font-size: 0.8em;
+}
+
+/*------------------------------------
+## Heading
+--------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  line-height: 1.2em;
+  color: #232323;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 2.827em;
+  margin: 0 0 em(30px);
+}
+
+h2 {
+  font-size: 1.999em;
+}
+
+h3 {
+  font-size: 1.414em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.85em;
+}
+
+/*================================================
+# Elements
+==================================================*/
+a {
+  color: inherit;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+a:hover, a:active {
+  outline: 0;
+  text-decoration: none;
+}
+
+i {
+  color: inherit;
+}
+
+/* End Animation Durations */
+::-moz-selection {
+  color: white;
+  background: #F75758;
+}
+
+::selection {
+  color: white;
+  background: #F75758;
+}
+.col-full-width {
+    float: none;
+    margin: 0 auto;
+}
+/*------------------#Pre-Loader----------------*/
+.preloader {
+    background: rgba(255,255,255,0.95);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    z-index: 99999;
+}
+.preloader .loader {
+    position: relative;
+    top: 45%;
+}
+.preloader .loader i.fa {
+    font-size: 3em;
+    color: #F75758;
+}
+/*--------#Site Header-----*/
+section.main {
+    padding: 100px 0;
+}
+.text-intro {
+    margin-bottom: 60px;
+}
+.text-intro h2 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.text-intro > h3 {
+    color: #767676;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    margin-top: 0;
+}
+.preview-header-top-area {
+    padding: 75px 0 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.preview-header-top-area h2 {
+    color: #232323;
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin: 0;
+}
+.preview-header-top-area p {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.2em;
+}
+/*--RevenX demos contant--*/
+preview-body {
+    background: #fafafa none repeat scroll 0 0;
+}
+.preview-single-image img {
+    width: 100%;
+}
+.preview-single-image {
+    box-shadow: 1px 1px 15px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    -webkit-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+    padding: 15px;
+}
+.preview-single-image:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+}
+.preview-single-image h2 {
+    background: #fff none repeat scroll 0 0;
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    padding: 30px 20px 20px;
+    text-align: center;
+}
+
+.footer-area {
+    background: #f7f7f7 none repeat scroll 0 0;
+    padding: 80px 0;
+}
+.social-share {
+    margin-bottom: 25px;
+}
+.social-share > a {
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 5px;
+    margin-top: 5px;
+    position: relative;
+    text-align: center;
+    top: 5px;
+    -webkit-transition: top 0.15s ease 0s;
+    transition: top 0.15s ease 0s;
+    width: 35px;
+}
+.social-share > a:hover {
+    top: 0;
+}
+.facebook {
+    background-color: #3d5a99;
+}
+.twitter {
+    background-color: #1ca0f2;
+}
+.google-plus {
+    background-color: #dc4a38;
+}
+.instagram {
+    background-color: #1d87bd;
+}
+.pinterest {
+    background-color: #bd081c;
+}
+.footer-area p {
+    color: #222222;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/*-------------Demo Responsive-------------*/
+@media only screen and (max-width: 991px) { 
+    section.main {
+        padding: 65px 0;
+    }
+}
+@media only screen and (max-width: 450px) { 
+    .preview-header-top-area {
+        padding: 55px 0 10px;
+    }
+    .preview-header-top-area p {
+        font-size: 24px;
+    }
+    .text-intro h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+}

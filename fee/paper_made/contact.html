@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Us</title>
+<meta content="Your description" http-equiv="description" />
+<meta content="your,keywords" http-equiv="keywords" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<!--below is the code to display the website properly in ie6-->
+<!--[if IE 6]>
+<style type="text/css"> 
+#background_texture{
+	background:url(images/header_bg.gif) center top no-repeat; /*PNGs cant be transparent in IE6 changed to GIF */
+}
+.post-it_text {
+    margin:11px 0 0 11px; /*when you float left and have a left margin you have to halve the number for IE6 */
+}
+#logo {
+	margin:80px 0px 0px 11px; /*when you float left and have a left margin you have to halve the number for IE6 */
+}
+#header_right{
+    margin:15px 0 0 0;
+}
+#header div{
+	
+}
+#menu_container{
+	margin-top:10px;
+    float:none;
+}
+.header-picture {
+	padding-left: 0px; /*take off padding for IE6*/
+}
+</style>
+<script defer type="text/javascript" src="js/pngfix.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+<script type="text/javascript">	
+$(document).ready(function(){
+	/*
+	Here we create a content slider using the jquery jFlow plugin.
+	Instructions are in the HELP file and also included in HTML comments below.
+	Link to the jFlow plugin can be found in help file.
+	*/
+	$("#hidden-controller").jFlow({
+		slides: "#header-slides",
+		controller: ".jFlowControl", // must be class, use . sign
+		slideWrapper : "#jFlowSlide", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // text, no sign
+		width: "500px",
+		height: "200px",
+		duration: 400,
+		prev: ".slides-arrow-left", // must be class, use . sign
+		next: ".slides-arrow-right" // must be class, use . sign
+	});
+	// We do this so that on long loading pages (eg: google maps) the content doesn't overflow/flicker down
+	// over the content.
+	$('#header-slides-holder').css('visibility','visible');
+});
+</script>
+</head>
+<body>
+<div id="clouds">
+  <div id="wrapper">
+    <div id="background_texture">
+      <div id="header">
+        <div id="logo"><img src="images/logo.png" alt="logo" /></div>
+        <div id="header_right">
+          <!-- slider here-->
+          <div id="hidden-controller"> 
+          	<!-- below are 3 span's - this means there will be 3 slides -->
+            <span class="jFlowControl">Menu1</span>
+            <span class="jFlowControl">Menu1</span>
+            <span class="jFlowControl">Menu1</span>
+            <!-- add another span here to add another slide -->
+            <!-- also add another div below where labeled -->
+          </div>
+          <div id="header-slides-holder" style="visibility:hidden;"> 
+          <div class="slides-arrow-left"><img src="images/icon_back.gif" alt="Previous" title="Previous"/></div>
+            <div id="header-slides">
+              <!-- slide 1 start -->
+              <div class="slide"> <img src="images/image_1.png" width="208" height="171" class="header-picture" alt="slogan icon 1"/>
+                <div class="header-about-main"> <img class="header-heading" src="images/title_header.gif" alt="Lorem ipsum dolor"/>
+                  <p class="header-description">Whether you are looking for a small easy to edit web site to promote your business, an online shopping cart with payment facilities, or something more custom, we can provide the whole package.</p>
+                </div>
+              </div>
+              <!-- slide 1 end -->
+              <!-- slide 2 start -->
+              <div class="slide"> <img src="images/image_2.png" class="header-picture" alt="slogan icon 1"/>
+                <div class="header-about-main"> <img class="header-heading" src="images/title_header2.gif" alt="Lorem ipsum dolor"/>
+                  <p class="header-description">Whether you are looking for a small easy to edit web site to promote your business, an online shopping cart with payment facilities, or something more custom, we can provide the whole package.</p>
+                </div>
+              </div>
+              <!-- start 2 end -->
+              <!-- slide 3 start -->
+              <div class="slide"> <img src="images/image_3.png" class="header-picture" alt="slogan icon 1"/>
+                <div class="header-about-main"> <img class="header-heading" src="images/title_header3.gif" alt="Lorem ipsum dolor"/>
+                  <p class="header-description">Whether you are looking for a small easy to edit web site to promote your business, an online shopping cart with payment facilities, or something more custom, we can provide the whole package.</p>
+                </div>
+              </div>
+              <!-- slide 3 end -->
+              <!-- to add another slide - copy one of the slide <div>'s from above and paste it here -->
+              <!-- also make sure to always have the same number of "jFlowControl" spans as number of slides -->
+              <!-- if you add a slide here, add a span were labeled above -->
+            </div>
+            <div class="slides-arrow-right"><img src="images/icon_next.gif"  alt="Next" title="Next"/></div>
+        </div>
+      </div>
+    </div>
+      <!--end header-->
+      <div id="menu_container">
+        <ul>
+          <li> <a href="index.html" class="m1">Home</a> </li>
+          <li> <a href="index.html" class="m2">About Us</a> </li>
+          <li> <a href="services.html" class="m3">Service</a> </li>
+          <li> <a href="index.html" class="m4">Team</a> </li>
+          <li> <a href="contact.html" class="m5">Contact Us</a> </li>
+        </ul>
+        <div id="search">
+          <form action="" method="post">
+            <input name="textarea" type="text" class="form" id="textarea" value="" size="15" />
+            <input name="search" type="image" class="button" id="search2" src="images/button_search.gif" />
+          </form>
+        </div>
+      </div>
+      <!--end back ground texture-->
+      
+      <!--start main paper-->
+      <div id="paper_container">
+        <div class="top"><img src="images/content_top.png" alt="top" /></div>
+        <div id="main_content">
+          <div class="left2">
+            <h1><img src="images/title_contact_us.gif" alt="Contact Us" width="131" height="25" /></h1>
+            <div>
+              <div class="left_details"> <strong>Company Name Pty Ltd </strong>
+                <p> <span class="contact_title">Phone:</span> <span class="contact_detail">1300 555 555</span> <br />
+                  <span class="contact_title">Fax:</span> <span class="contact_detail">61 75555 5555</span> <br />
+                  <span class="contact_title">Mob:</span><span class="contact_detail"> 61 42555 5555 </span></p>
+                <hr class="clear" />
+                <p><span class="blue"><strong>Address:</strong></span><br />
+                  Shop 5, 55 Retail Way, <br />
+                  Suburb, City, Country 4444 </p>
+                <p> PO Box 655, <br />
+                  Suburb, 
+                  City, Country 4444 </p>
+              </div>
+              <div id="map" class="map"></div>
+              <!--change the big long number after key= to your API from http://code.google.com/apis/maps/signup.html-->
+              <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA96P3z7MY5qF4R5Rhg-iUxxQDgkJOM-GUrefIF5OMSfStsdvKmRS4bUUpunS30yUsr-2AsfKdU7um0w" type="text/javascript"></script>
+              <script type="text/javascript">
+			 //<![CDATA[
+			function loadmap() {
+			 if (GBrowserIsCompatible()) {
+			  var map = new GMap2(document.getElementById("map"));
+			  var geocoder = new GClientGeocoder();
+			  map.setCenter(new GLatLng(37.4419, -122.1419), 13);
+			  map.addControl(new GSmallMapControl());
+			  //change the address below to the one you want the marker to point to
+			  var address = "gold coast, qld, australia";
+			  geocoder.getLatLng(
+			      address,
+			      function(point) {
+			       if (!point) {
+			         alert(address + " not found");
+			       } else {
+			         map.setCenter(point, 15);
+			         var marker = new GMarker(point);
+			         map.addOverlay(marker);
+					  // change the address below to the one you want displayed in the popup
+			         marker.openInfoWindowHtml(
+			            "<strong>Company:</strong><br>Shop 5, 55 Retail Way,"+
+			            " <br>Suburb 4444.");
+			       }
+			     }
+			  );
+			 }
+			}
+			window.onload=loadmap;
+			//]]>
+			</script>
+              <hr />
+              <h1><img src="images/title_email.gif" alt="Email Us" width="108" height="24" /> </h1>
+              <p>To contact us via email please complete the form below.</p>
+              <form action="formsubmit.php" method="post">
+                <fieldset id="contact">
+                <label for="name">Name:</label>
+                <input name="name" type="text" class="forms" id="name" size="35" />
+                <label for="email">Email:</label>
+                <input name="email" type="text" class="forms" id="email" size="35" />
+                <label for="phone">Phone:</label>
+                <input name="phone" type="text" class="forms" id="phone" size="35" />
+                <label for="message">Message:</label>
+                <textarea name="message" cols="35" rows="6" class="forms" id="message"></textarea>
+                <input type="image" id="submit" name="submit" src="images/button_submit.gif" title="Submit Message" />
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="right2">
+            <!--start small paper-->
+            <div class="small_paper">
+              <div class="small_paper_bottom">
+                <div class="text">
+                  <div class="title_padding"><img src="images/title_product.gif" alt="Products" /></div>
+                  <ul class="line_list">
+                    <li> <a href="#">Content Management System</a></li>
+                    <li><a href="#"> E-Commerce Shopping Cart </a></li>
+                    <li><a href="#">E-Newsletter System </a></li>
+                    <li><a href="#">Client Manager System</a> </li>
+
+                    <li><a href="#">Build Your Own Site</a> </li>
+                  </ul>
+                  <hr class="clear" />
+                </div>
+              </div>
+            </div>
+            <!--end small paper-->
+            <!--start small paper 2-->
+            <div class="small_paper">
+              <div class="small_paper_bottom2">
+                <div class="text">
+                  <div class="title_padding"><img src="images/title_tip.gif" alt="Tip" /> </div>
+                  <strong>Site Maps</strong> - Site maps which links to important parts of your site can be provided. If the site map exceeds 100 links, you may break it to separate pages
+                  <hr class="clear" />
+                </div>
+              </div>
+            </div>
+            <!--end small paper 2-->
+            <!--start small paper 3-->
+            <div class="small_paper">
+              <div class="small_paper_bottom">
+                <div class="text">
+                  <div class="title_padding"><img src="images/title_demo.gif" alt="Demo" /> </div>
+                  <p style="font-size:11px; line-height:normal; padding:1px; margin:2px">Webitor&reg; is a powerful new way 
+                    for website owners to quickly
+                    and easily handle their web site maintenance.</p>
+                  <form method="post" action="formsubmit.php">
+                    <input name="name" type="text" class="side_form" id="full_name" value="Your Name" onfocus="if(this.value=='Your Name')this.value='';" onblur="if(this.value=='')this.value='Your Name';" />
+                    <br />
+                    <input name="business_name" type="text" class="side_form" id="business_name" value="Business Name" onfocus="if(this.value=='Business Name')this.value='';" onblur="if(this.value=='')this.value='Business Name';" />
+                    <br />
+                    <input name="email" type="text" class="side_form" id="email_address" value="Email Address" onfocus="if(this.value=='Email Address')this.value='';" onblur="if(this.value=='')this.value='Email Address';" />
+                    <br />
+                    <select name="demo_purpose" class="side_form" id="demo_purpose" style="width:150px;">
+                      <option>You are interested in:</option>
+                      <option>Trialing a demo</option>
+                      <option>Using Webitor on my website</option>
+                      <option>Getting a new website</option>
+                      <option>Reselling the software</option>
+                      <option>Just Curious</option>
+                    </select>
+                    <br />
+                    <input name="" type="image" src="images/button_submit.gif" align="right" />
+                  </form>
+                  <hr class="clear" />
+                </div>
+              </div>
+            </div>
+            <!--end small paper 3-->
+          </div>
+          <hr class="clear" />
+        </div>
+        <div class="paper_bottom"><img src="images/content_bottom.png" alt="bottom" /></div>
+      </div>
+      <!-- end main paper-->
+      <div id="footer">
+        <div class="left">&copy; Company Name</div>
+        <div class="right"><a href="sitemap.php">Site Map</a> | <a href="#">Legal</a> | <a href="contact.html">Contact Us</a></div>
+      </div>
+    <!--end wrapper-->
+  </div>
+</div>
+</div>
+<!--end cloud--><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13101712-10");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

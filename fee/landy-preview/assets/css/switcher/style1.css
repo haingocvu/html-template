@@ -1,0 +1,58 @@
+.section-title h2::after {
+	border-bottom: 3px solid #333;
+}
+.button{
+	color: #333;
+	border: 2px solid #333;
+}
+.button:before {
+	background: #333 none repeat scroll 0 0;
+}
+.home-btn-bg {
+	background: #333;
+}
+.mainmenu ul.nav.navbar-nav li a:hover { color: #333 !important }
+.is-sticky .mainmenu ul.nav.navbar-nav li.active a { color: #333 !important }
+.is-sticky .navbar-brand {
+    color: #333 !important;
+}
+.single-feature i {
+  color: #333;
+}
+.skills-progress .progress-bar {
+	background: #333 none repeat scroll 0 0;
+}
+.about-text li i {
+	color: #333;
+}
+.single-service i {
+	color: #333;
+}
+.single-service:hover i {
+	background: #333;
+}
+.portfolio-filter ul li.active,
+.portfolio-filter ul li:hover { border: 2px solid #333 }
+.work-icon a:hover{
+	color: #333 !important;
+}
+.single_pricing.recommended .price h4,
+.single_pricing:hover .price h4 { color: #333 }
+.signup-btn-bg:hover {
+	color: #333 !important;
+}
+.form-control:hover,
+.form-control:focus {
+    border-color: -moz-use-text-color -moz-use-text-color #333;
+}
+.btn-contact-bg:hover,
+.btn-contact-bg:focus {
+    background: #333 none repeat scroll 0 0;
+}
+.copyright {
+    background: #333;
+}
+.details-single-project li a,
+.details-single-project li i {
+	color: #333;
+}

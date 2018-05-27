@@ -1,0 +1,58 @@
+.section-title h2::after {
+	border-bottom: 3px solid #ffd600;
+}
+.button{
+	color: #ffd600;
+	border: 2px solid #ffd600;
+}
+.button:before {
+	background: #ffd600 none repeat scroll 0 0;
+}
+.home-btn-bg {
+	background: #ffd600;
+}
+.mainmenu ul.nav.navbar-nav li a:hover { color: #ffd600 !important }
+.is-sticky .mainmenu ul.nav.navbar-nav li.active a { color: #ffd600 !important }
+.is-sticky .navbar-brand {
+    color: #ffd600 !important;
+}
+.single-feature i {
+  color: #ffd600;
+}
+.skills-progress .progress-bar {
+	background: #ffd600 none repeat scroll 0 0;
+}
+.about-text li i {
+	color: #ffd600;
+}
+.single-service i {
+	color: #ffd600;
+}
+.single-service:hover i {
+	background: #ffd600;
+}
+.portfolio-filter ul li.active,
+.portfolio-filter ul li:hover { border: 2px solid #ffd600 }
+.work-icon a:hover{
+	color: #ffd600 !important;
+}
+.single_pricing.recommended .price h4,
+.single_pricing:hover .price h4 { color: #ffd600 }
+.signup-btn-bg:hover {
+	color: #ffd600 !important;
+}
+.form-control:hover,
+.form-control:focus {
+    border-color: -moz-use-text-color -moz-use-text-color #ffd600;
+}
+.btn-contact-bg:hover,
+.btn-contact-bg:focus {
+    background: #ffd600 none repeat scroll 0 0;
+}
+.copyright {
+    background: #ffd600;
+}
+.details-single-project li a,
+.details-single-project li i {
+	color: #ffd600;
+}

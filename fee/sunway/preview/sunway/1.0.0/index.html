@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
+	<link rel="manifest" href="assets/ico/manifest.json">
+	<link rel="mask-icon" href="assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="assets/ico/favicon.ico">
+	<meta name="msapplication-config" content="assets/ico/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<title>Sunway - Hotel & Resort template</title>
+
+	<!-- CSS Plugins -->
+	<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/plugins/owl-carousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/plugins/lightbox/css/lightbox.min.css">
+
+	<!-- CSS Global -->
+	<link rel="stylesheet" href="assets/css/theme.min.css">
+
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="75">
+
+	<!-- PRELOADER
+	================================================== -->
+	<div class="preloader">
+		<div class="preloader__body">
+			<div class="preloader__body__img">
+				<img src="assets/img/preloader.svg" alt="Loading...">
+			</div>
+			<h3 class="preloader__body__heading">
+				<span>Sunway</span>
+			</h3>
+		</div> <!-- / .preloader__body -->
+	</div> <!-- / .preloader -->
+
+	<!-- NAVBAR
+	================================================== -->
+	<nav class="navbar navbar-fixed-top navbar-default">
+		<div class="container">
+	
+			<!-- Brand name -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_main" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#section_welcome">
+					Sunway
+				</a>
+			</div>
+	
+			<!-- Links -->
+			<div class="collapse navbar-collapse" id="navbar_main">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#section_welcome">Welcome</a></li>
+					<li><a href="#section_about">About Us</a></li>
+					<li><a href="#section_rooms">Rooms</a></li>
+					<li><a href="#section_gallery">Gallery</a></li>
+					<li><a href="#section_testimonials">Testimonials</a></li>
+					<li><a href="#section_contact">Contact Us</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+
+		</div><!-- /.container -->
+	</nav>
+
+	<!-- BANNER
+	================================================== -->
+	<section class="section_banner" id="section_welcome">
+
+		<!-- Main content -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+			
+					<!-- Page header -->
+					<h1 class="page-header">
+						Sunway Resort
+					</h1>
+					<p class="page-subheader">
+						A wonderful place to enjoy your vacations. Our luxury hotel is located in the city center, offers beautiful views and is only ten minute walk from the beach.
+					</p>
+					<a href="#section_about" class="btn btn-primary">
+						Learn more about us <i class="fa fa-arrow-circle-down"></i>
+					</a>
+	
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-5 col-lg-offset-1">
+				
+					<!-- Reservation form -->
+					<form class="section_banner__form" id="reservation-form">
+						<!-- Alert message -->
+						<div class="alert" id="reservation-form__message">
+						</div>
+
+						<!-- Form controls -->
+						<div class="form-group">
+							<label for="reservation__check-in">Check-in</label>
+							<input type="date" class="form-control" id="reservation__check-in" name="reservation__check-in">
+							<div class="help-block"></div>
+						</div>
+						<div class="form-group">
+							<label for="reservation__check-out">Check-out</label>
+							<input type="date" class="form-control" id="reservation__check-out" name="reservation__check-out">
+							<div class="help-block"></div>
+						</div>
+						<div class="form-group">
+							<label for="reservation__guests">Guests</label>
+							<select class="form-control" id="reservation__guests" name="reservation__guests">
+								<option value="1">1 person</option>
+								<option value="2">2 persons</option>
+								<option value="3">3 persons</option>
+								<option value="4">4 persons</option>
+								<option value="5">5 persons</option>
+								<option value="0">More than 5 persons</option>
+							</select>
+							<div class="help-block"></div>
+						</div>
+						<div class="form-group">
+							<label for="reservation__email">E-mail address</label>
+							<input type="email" id="reservation__email" name="reservation__email" class="form-control" placeholder="Your e-mail address">
+							<div class="help-block"></div>
+						</div>
+						<button type="submit" class="btn btn-block btn-accent">
+							Reserve a room <i class="fa fa-calendar"></i>
+						</button>
+					</form>
+
+					<!-- Handwriting -->
+					<h3 class="section_banner__reservation">
+						<span>
+							Quick reservation <img src="assets/img/arrow.svg" alt="Arrow">
+						</span>
+					</h3>
+
+				</div>
+			</div> <!-- / .row -->
+		</div> <!-- / .container -->
+
+		<!-- Footer -->
+		<div class="section_banner__footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						
+						<!-- Social links -->
+						<ul class="section_banner__footer__social">
+							<li>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-instagram"></i></a>
+							</li>
+						</ul>
+
+					</div>
+					<div class="col-sm-6">
+						
+						<div class="section_banner__footer__address">
+							<i class="fa fa-map-marker"></i> 1234 Altschul, Miami, FL 10027-0000
+						</div>
+
+					</div>
+				</div> <!-- / .row -->
+			</div> <!-- / .container -->
+		</div> <!-- / .section_banner__footer -->
+
+	</section>
+
+	<!-- ABOUT US
+	================================================== -->
+	<section class="section_about" id="section_about">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					
+					<!-- Page header -->
+					<p class="page-preheader text-center">
+						About Us
+					</p>
+					<h2 class="page-header text-center">
+						The place you won't want to leave
+					</h2>
+	
+				</div>
+			</div> <!-- / .row -->
+			<div class="row row-centered">
+				<div class="col-sm-6">
+					
+					<p>
+						The Sunway hotel is located in one block from a subway station and within walking distance of Central Park. It features a restaurant, meeting and banquet facilisities and rooms with a flat-screen TV.
+					</p>
+					<p>
+						Guests have access to two balconies which offer wonderful views of the city. We also speak your language!
+					</p>
+					<ul class="section_about__features">
+						<li>
+							<i class="fa fa-wifi"></i> Free WiFi
+						</li>
+						<li>
+							<i class="fa fa-car"></i> Parking
+						</li>
+						<li>
+							<i class="fa fa-ban"></i> Non-smoking rooms
+						</li>
+						<li>
+							<i class="fa fa-users"></i> Meeting facilities
+						</li>
+						<li>
+							<i class="fa fa-briefcase"></i> Luggage storage
+						</li>
+					</ul>
+
+				</div>
+				<div class="col-sm-6">
+					
+					<div class="section_about__img">
+						<img src="assets/img/2.jpg" alt="..." class="img-responsive">
+					</div>
+
+				</div>
+			</div> <!-- / .row -->
+		</div> <!-- / .container -->
+	</section>
+
+	<!-- ROOMS
+	================================================== -->
+	<section class="section_rooms" id="section_rooms">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+	
+					<!-- Page header -->
+					<p class="page-preheader text-center">
+						Our rooms
+					</p>
+					<h2 class="page-header text-center">
+						Where do you want to stay?
+					</h2>
+	
+				</div>
+			</div> <!-- / .row -->
+			<div class="row">
+				
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs section_rooms__nav" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#single-room" aria-controls="single-room" role="tab" data-toggle="tab">Single Room</a>
+					</li>
+					<li role="presentation">
+						<a href="#double-room" aria-controls="double-room" role="tab" data-toggle="tab">Double Room</a>
+					</li>
+					<li role="presentation">
+						<a href="#triple-room" aria-controls="triple-room" role="tab" data-toggle="tab">Triple Room</a>
+					</li>
+					<li role="presentation">
+						<a href="#king-room" aria-controls="king-room" role="tab" data-toggle="tab">King Room</a>
+					</li>
+					<li role="presentation">
+						<a href="#studio" aria-controls="studio" role="tab" data-toggle="tab">Studio</a>
+					</li>
+				</ul>
+			
+				<!-- Tab panes -->
+				<div class="tab-content section_rooms__panels">
+					<div role="tabpanel" class="tab-pane fade in active" id="single-room">
+						<div class="row">
+							<div class="col-sm-12 col-md-8">
+								<div class="section_rooms__panels__img bestseller">
+									<img src="assets/img/1.jpg" class="img-responsive" alt="...">
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<h3 class="page-header">
+									Single room
+								</h3>
+								<div class="section_rooms__panels__price">
+									<span>$ </span>80<span> / night</span>
+								</div>
+								<p>
+									A room assigned to one person. May have one or more beds.
+								</p>
+								<ul class="section_rooms__panels__features">
+									<li>
+										<i class="fa fa-eye"></i> Sea view
+									</li>
+									<li>
+										<i class="fa fa-building"></i> Balcony
+									</li>
+									<li>
+										<i class="fa fa-shower"></i> Private bathroom
+									</li>
+								</ul>						
+							</div>
+						</div> <!-- / .row -->
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="double-room">
+						<div class="row">
+							<div class="col-sm-12 col-md-8">
+								<div class="section_rooms__panels__img">
+									<img src="assets/img/3.jpg" class="img-responsive" alt="...">
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<h3 class="page-header">
+									Double room
+								</h3>
+								<div class="section_rooms__panels__price">
+									<span>$ </span>120<span> / night</span>
+								</div>
+								<p>
+									A room assigned to two people. May have one or more beds.
+								</p>
+								<ul class="section_rooms__panels__features">
+									<li>
+										<i class="fa fa-eye"></i> City view
+									</li>
+									<li>
+										<i class="fa fa-building"></i> Balcony
+									</li>
+									<li>
+										<i class="fa fa-shower"></i> Private bathroom
+									</li>
+								</ul>						
+							</div>
+						</div> <!-- / .row -->
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="triple-room">
+						<div class="row">
+							<div class="col-sm-12 col-md-8">
+								<div class="section_rooms__panels__img">
+									<img src="assets/img/4.jpg" class="img-responsive" alt="...">
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<h3 class="page-header">
+									Triple room
+								</h3>
+								<div class="section_rooms__panels__price">
+									<span>$ </span>160<span> / night</span>
+								</div>
+								<p>
+									A room assigned to three people. May have two or more beds.
+								</p>
+								<ul class="section_rooms__panels__features">
+									<li>
+										<i class="fa fa-eye"></i> Sea view
+									</li>
+									<li>
+										<i class="fa fa-building"></i> Balcony
+									</li>
+									<li>
+										<i class="fa fa-shower"></i> Private bathroom
+									</li>
+								</ul>						
+							</div>
+						</div> <!-- / .row -->
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="king-room">
+						<div class="row">
+							<div class="col-sm-12 col-md-8">
+								<div class="section_rooms__panels__img">
+									<img src="assets/img/5.jpg" class="img-responsive" alt="...">
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<h3 class="page-header">
+									King room
+								</h3>
+								<div class="section_rooms__panels__price">
+									<span>$ </span>200<span> / night</span>
+								</div>
+								<p>
+									A room with a king-sized bed. May be occupied by one or more people.
+								</p>
+								<ul class="section_rooms__panels__features">
+									<li>
+										<i class="fa fa-eye"></i> Sea view
+									</li>
+									<li>
+										<i class="fa fa-building"></i> Balcony
+									</li>
+									<li>
+										<i class="fa fa-shower"></i> Private bathroom
+									</li>
+								</ul>						
+							</div>
+						</div> <!-- / .row -->
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="studio">
+						<div class="row">
+							<div class="col-sm-12 col-md-8">
+								<div class="section_rooms__panels__img">
+									<img src="assets/img/6.jpg" class="img-responsive" alt="...">
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<h3 class="page-header">
+									Studio
+								</h3>
+								<div class="section_rooms__panels__price">
+									<span>$ </span>50<span> / night</span>
+								</div>
+								<p>
+									A room with a studio bed – a couch that can be converted into a bed.
+								</p>
+								<ul class="section_rooms__panels__features">
+									<li>
+										<i class="fa fa-eye"></i> City view
+									</li>
+									<li>
+										<i class="fa fa-building"></i> Balcony
+									</li>
+									<li>
+										<i class="fa fa-shower"></i> Private bathroom
+									</li>
+								</ul>						
+							</div>
+						</div> <!-- / .row -->
+					</div>
+				</div>
+
+			</div> <!-- / .row -->
+		</div> <!-- / .container -->
+	</section>
+
+	<!-- GALLERY
+	================================================== -->
+	<section class="section_gallery" id="section_gallery">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+	
+					<p class="page-preheader text-center">
+						Our gallery
+					</p>
+					<h2 class="page-header text-center">
+						Take a sneak peek
+					</h2>
+	
+				</div>
+			</div> <!-- / .row -->
+			<div class="row grid">
+				<div class="col-sm-4 grid-item">
+					<a href="assets/img/10.jpg" data-lightbox="gallery">
+						<img src="assets/img/10.jpg" class="img-responsive" alt="...">
+					</a>
+				</div>
+				<div class="col-sm-4 grid-item">
+					<a href="assets/img/11.jpg" data-lightbox="gallery">
+						<img src="assets/img/11.jpg" class="img-responsive" alt="...">
+					</a>
+				</div>
+				<div class="col-sm-4 grid-item">
+					<a href="assets/img/12.jpg" data-lightbox="gallery">
+						<img src="assets/img/12.jpg" class="img-responsive" alt="...">
+					</a>
+				</div>
+				<div class="col-sm-4 grid-item">
+					<a href="assets/img/13.jpg" data-lightbox="gallery">
+						<img src="assets/img/13.jpg" class="img-responsive" alt="...">
+					</a>
+				</div>
+				<div class="col-sm-4 grid-item">
+					<a href="assets/img/14.jpg" data-lightbox="gallery">
+						<img src="assets/img/14.jpg" class="img-responsive" alt="...">
+					</a>
+				</div>
+				<div class="col-sm-4 grid-item">
+					<a href="assets/img/15.jpg" data-lightbox="gallery">
+						<img src="assets/img/15.jpg" class="img-responsive" alt="...">
+					</a>
+				</div>
+				<div class="col-sm-4 grid-item">
+					<a href="assets/img/16.jpg" data-lightbox="gallery">
+						<img src="assets/img/16.jpg" class="img-responsive" alt="...">
+					</a>
+				</div>
+				<div class="col-sm-4 grid-item">
+					<a href="assets/img/17.jpg" data-lightbox="gallery">
+						<img src="assets/img/17.jpg" class="img-responsive" alt="...">
+					</a>
+				</div>
+			</div> <!-- / .row -->
+		</div> <!-- / .container -->
+	</section>
+
+	<!-- TESTIMONIALS
+	================================================== -->
+	<section class="section_testimonials" id="section_testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					
+					<p class="page-preheader text-center">
+						Testimonials
+					</p>
+					<h2 class="page-header text-center">
+						What our guests say
+					</h2>
+	
+				</div>
+			</div> <!-- / .row -->
+			<div class="row">
+				<div class="col-sm-12">
+					
+					<div class="owl-carousel">
+						<div>
+							<div class="section_testimonials__item">
+								<div class="section_testimonials__item__body">		
+									<p>
+										Fantastic place! I spent there two weeks in April. Very friendly staff, clean rooms, tasty food. If you are looking for a nice place to stay while in Miami - this hotel should be your option number one!
+									</p>
+								</div>
+								<div class="section_testimonials__item__header">
+									<div class="section_testimonials__item__header__img">
+										<img src="assets/img/7.png" alt="..." class="img-responsive">
+									</div>
+									<div class="section_testimonials__item__header__body">
+										<h3 class="section_testimonials__item__header__body__heading">
+											Judy Roe
+										</h3>
+										<div class="section_testimonials__item__header__body__from">
+											Montreal, Canada
+										</div>
+									</div>
+								</div>
+							</div> <!-- / .section_testimonials__item -->
+						</div>
+						<div>
+							<div class="section_testimonials__item">
+								<div class="section_testimonials__item__body">		
+									<p>
+										The room was very spacious and had a great view. I had a separate shower and the location was perfect too. I am a downtown guy, because I like shopping and just waking there, so this hotel was just what I'd been looking for!
+									</p>
+								</div>
+								<div class="section_testimonials__item__header">
+									<div class="section_testimonials__item__header__img">
+										<img src="assets/img/8.png" alt="..." class="img-responsive">
+									</div>
+									<div class="section_testimonials__item__header__body">
+										<h3 class="section_testimonials__item__header__body__heading">
+											John Doe
+										</h3>
+										<div class="section_testimonials__item__header__body__from">
+											Paris, France
+										</div>
+									</div>
+								</div>
+							</div> <!-- / .section_testimonials__item -->
+						</div>
+						<div>
+							<div class="section_testimonials__item">
+								<div class="section_testimonials__item__body">		
+									<p>
+										The staff was decent and everything was just perfect. They had a washing machine and a dryer which were located right inside our room! The location was perfect too - we didn't have to catch public transport once!
+									</p>
+								</div>
+								<div class="section_testimonials__item__header">
+									<div class="section_testimonials__item__header__img">
+										<img src="assets/img/9.png" alt="..." class="img-responsive">
+									</div>
+									<div class="section_testimonials__item__header__body">
+										<h3 class="section_testimonials__item__header__body__heading">
+											Richard Doe
+										</h3>
+										<div class="section_testimonials__item__header__body__from">
+											Chicago, USA
+										</div>
+									</div>
+								</div>
+							</div> <!-- / .section_testimonials__item -->
+						</div>
+					</div> <!-- / .owl-carousel -->
+
+				</div>
+			</div> <!-- / .row -->
+		</div> <!-- / .container -->
+	</section>
+
+	<!-- CONTACT
+	================================================== -->
+	<section class="section_contact" id="section_contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+	
+					<p class="page-preheader text-center">
+						Contact
+					</p>
+					<h2 class="page-header text-center">
+						Get in touch with us
+					</h2>
+	
+				</div>
+			</div> <!-- / .row -->
+			<div class="row section_contact__row">
+				<div class="col-sm-6">
+					
+					<!-- Contact info -->
+					<div class="section_contact__info">
+						<h3 class="page-header">Contact information</h3>
+						<ul class="section_contact__info__items">
+							<li>
+								<i class="fa fa-map-marker"></i>  1234 Altschul, Miami, FL 10027-0000
+							</li>
+							<li>
+								<i class="fa fa-phone"></i> <a href="tel:0123456789">+0123456789</a>
+							</li>
+							<li>
+								<i class="fa fa-envelope"></i> <a href="mailto:admin@domain.com">admin@domain.com</a>
+							</li>
+							<li>
+								<i class="fa fa-twitter"></i> <a href="#">Find us on Twitter</a>
+							</li>
+							<li>
+								<i class="fa fa-facebook"></i> <a href="#">Find us on Facebook</a>
+							</li>
+							<li>
+								<i class="fa fa-instagram"></i> <a href="#">Find us on Instagram</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="col-sm-6">
+					
+					<!-- Google Map -->
+					<div class="google-map" data-lat="25.7823072" data-lng="-80.3010442" data-zoom="12"></div>
+
+				</div>
+			</div> <!-- / .row -->
+		</div> <!-- / .container -->
+	</section>
+
+	<!-- FOOTER
+	================================================== -->
+	<footer class="section_footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+				
+					<!-- About Us -->
+					<h3 class="section_footer__header">
+						About Us
+					</h3>
+					<p class="section_footer__p">
+						A wonderful place to enjoy your vacations. Our luxury hotel is located in the city center, offers beautiful views and is only ten minute walk from the beach.
+					</p>
+
+				</div>
+				<div class="col-sm-4">
+				
+					<!-- Contact info -->
+					<h3 class="section_footer__header">
+						Contact info
+					</h3>
+					<ul class="section_footer__list">
+						<li>
+							<i class="fa fa-map-marker"></i> 1234 Altschul, Miami, FL 10027-0000
+						</li>
+						<li>
+							<i class="fa fa-phone"></i> <a href="tel:0123456789">+0123456789</a>
+						</li>
+						<li>
+							<i class="fa fa-envelope-o"></i> <a href="mailto:admin@domain.com">admin@domain.com</a>
+						</li>
+					</ul>
+
+				</div>
+				<div class="col-sm-4">
+				
+					<!-- Social links -->
+					<h3 class="section_footer__header">
+						Social links
+					</h3>
+					<ul class="section_footer__list">
+						<li>
+							<i class="fa fa-twitter"></i> <a href="#">Find us on Twitter</a>
+						</li>
+						<li>
+							<i class="fa fa-facebook"></i> <a href="#">Find us on Facebook</a>
+						</li>
+						<li>
+							<i class="fa fa-instagram"></i> <a href="#">Find us on Instagram</a>
+						</li>
+					</ul>
+
+				</div>
+			</div> <!-- / .row -->
+			<div class="row">
+				<div class="col-sm-12">
+				
+					<!-- Copyright -->
+					<div class="section_footer__copyright">
+						<span class="dash"></span> <i class="fa fa-copyright"></i> <span id="year"></span> Sunway. All rights reserved.
+					</div>
+
+				</div>
+			</div> <!-- / .row -->
+		</div> <!-- / .container -->  
+	</footer>
+
+	<!-- JAVASCRIPT
+	================================================== -->
+
+	<!-- JS Global -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- JS Plugins -->
+	<script src="assets/plugins/reservation/reservation.js"></script>
+	<script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+	<script src="assets/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+	<script src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
+	<script src="assets/plugins/lightbox/js/lightbox.min.js"></script>
+	<script src="assets/plugins/smoothscroll/smoothscroll.min.js"></script>
+
+	<!-- JS Custom -->
+	<script src="assets/js/theme.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+	<!-- Google maps -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKMGgFp5OdpSKkQN2X5fd7LSLVPANFjy8&callback=map.initMap"></script>
+
+  </body>
+</html>

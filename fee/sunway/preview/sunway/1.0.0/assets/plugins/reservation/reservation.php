@@ -1,0 +1,1 @@
+{"error":{"check_in":"Please enter the check-in date.","check_out":"Please enter the check-out date.","guests":"Please enter the number of guests.","email":"Please enter your email address."}}

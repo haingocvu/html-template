@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>400 Bad Request</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        body {
+        	font-family: Verdana, Arial, Helvetica, sans-serif;
+        	font-size: 12px;
+        	background-color:#367E8E;
+        	scrollbar-base-color: #005B70;
+        	scrollbar-arrow-color: #F3960B;
+        	scrollbar-DarkShadow-Color: #000000;
+        	color: #FFFFFF;
+			margin:0;
+        }
+        a { color:#021f25; text-decoration:none}
+        h1 {
+        	font-size: 18px;
+        	color: #FB9802;
+        	padding-bottom: 10px;
+        	background-image: url(sys_cpanel/images/bottombody.jpg);
+        	background-repeat: repeat-x;
+        	padding:5px 0 10px 15px;
+			margin:0;
+        }
+        #body-content p {
+        	padding-left: 25px;
+        	padding-right: 25px;
+        	line-height: 18px;
+        	padding-top: 5px;
+        	padding-bottom: 5px;
+        }
+        h2 {
+        	font-size: 14px;
+        	font-weight: bold;
+        	color: #FF9900;
+        	padding-left: 15px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="body-content">  
+<!-- start content-->
+
+<!-- 
+ instead of REQUEST_URI, we could show absolute URL via:
+ http://HTTP_HOST/REQUEST_URI
+    but what if its https:// or other protocol?
+    
+    SERVER_PORT_SECURE doesn't seem to be used
+    SERVER_PORT logic would break if they use alternate ports
+-->
+
+<h1>400 Bad Request</h1>
+<p>Your browser sent a request that this server could not understand:</p>
+  <blockquote>
+    (none)/envato/pixelway/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular (port 80)
+  </blockquote> 
+<p>
+    Please forward this error screen to 204.197.248.110's 
+    <a href="/cdn-cgi/l/email-protection#95e3fcf7f0e1fdf0f8f0e6d5f2f8f4fcf9bbf6faf8aae6e0f7fff0f6e1a8d0e7e7fae7b5f8f0e6e6f4f2f0b5cea1a5a5c8b5a1a5a5b5d7f4f1b5c7f0e4e0f0e6e1b5f3fae7b5bdfbfafbf0bcbaf0fbe3f4e1fabae5fcedf0f9e2f4ecbaf3fafbe1e6baf2f9ece5fdfcf6fafbe6b8fdf4f9f3f9fcfbf2e6b8e7f0f2e0f9f4e7bbe6e3f2b6f2f9ece5fdfcf6fafbe6b8fdf4f9f3f9fcfbf2e6e7f0f2e0f9f4e7b5e5fae7e1b5ada5b5fafbb5c1e0f0e6f1f4ecb9b5a4a4b8dfe0f9b8a7a5a4a2b5a4a2afa1adafa5adb5">
+    WebMaster</a>.
+</p>
+<hr />
+
+
+<!-- end content -->
+    </div>
+  <script>/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/\>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
+</html>
